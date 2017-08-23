@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--分类-->
+<view class="category">
+  <view class="category_item" wx:for="{{iconArray}}">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <image src="{{item.iconUrl}}" class="index_icon"></image>
+      </view>
+      <view class="category_item_text">
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 标题 -->
+<view class="biaoti" wx:for="{{textArray}}">
+  <text>{{item.bText}}</text>
+</view>
+<!-- 产品 -->
+<view class="cp">
+  <view class="l1">
+    <image src="#"></image>
+  </view>
+  <view class="l2">
+    <image src="#"></image>
+  </view>
+</view>

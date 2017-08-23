@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/huodong/huodong",
+    "pages/weizhi/weizhi",
+    "pages/wode/wode",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ab956c",
+    "navigationBarTitleText": "在线预约",
+    "navigationBarTextStyle": "while"
+  },
+  "tabBar": {
+    "color": "black",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_s.png"
+      },
+      {
+        "pagePath": "pages/huodong/huodong",
+        "text": "活动",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_s.png"
+      },
+      {
+        "pagePath": "pages/weizhi/weizhi",
+        "text": "位置",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_s.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_s.png"
+      }
+    ]
+  }
+}
