@@ -3,16 +3,16 @@
 <view>
   <swiper indicator-dots="{{indicatorDots}}" 
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+    <block wx:for="{{swpimg}}" wx:key="{{item}}">
       <swiper-item>
-        <image src="{{item}}" class="slide-image" />
+        <image src="{{item.image}}" class="slide-image" />
       </swiper-item>
     </block>
   </swiper>
 </view>
 <!--分类-->
 <view class="category">
-  <view class="category_item" wx:for="{{iconArray}}">
+  <view class="category_item" wx:for="{{iconArray}}" wx:key="{{item}}">
     <view class="category_item_wrap">
       <view class="icon_wrap">
         <image src="{{item.iconUrl}}" class="index_icon"></image>
@@ -24,10 +24,10 @@
   </view>
 </view>
 <!-- 标题 -->
-<view class="biaoti" wx:for="{{textArray}}">
+<view class="biaoti" wx:for="{{textArray}}"wx:key="{{item}}">
   <text>{{item.bText}}</text>
 </view>
-<!-- 产品 -->
+<!-- 热门产品 -->
 <view class="cp">
   <view class="l1">
     <image src="#"></image>
@@ -35,4 +35,25 @@
   <view class="l2">
     <image src="#"></image>
   </view>
-</view>
+</view> 
+<!-- 图片 -->
+  <view class="cp1">
+  <view class="l3">
+    <image src="#"></image>
+  </view> 
+</view> 
+<!-- 标题 -->
+ <view class="biaoti" wx:for="{{textArray}}"wx:key="{{item}}">
+  <text>{{item.bText1}}</text>
+</view> 
+<!-- 所有产品 -->
+ <view class="allcp">
+  <view class="acp1">11</view>
+  <view class="acp2">22</view>
+    <view class="acp1">11</view>
+  <view class="acp2">22</view>
+    <view class="acp1">11</view>
+  <view class="acp2">22</view>
+    <view class="acp1">11</view>
+  <view class="acp2">22</view>
+</view> 
